@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@growthbook/growthbook-react": "^0.17.0",
-    "nanoid": "^4.0.2"
-  }
-}
