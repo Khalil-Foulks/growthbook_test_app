@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { IfFeatureEnabled } from '@growthbook/growthbook-react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <IfFeatureEnabled feature="show-logo">
+          <img src={logo} className="App-logo" alt="logo" />
+        </IfFeatureEnabled>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
